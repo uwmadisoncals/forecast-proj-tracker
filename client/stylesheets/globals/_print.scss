@@ -1,0 +1,65 @@
+@media print {
+	
+	.logo {
+		height: 40px;
+		
+		svg {
+			#text {
+				path {
+					fill: rgba(0,0,0,0.8) !important;
+				}
+			}
+			
+			#cloudwhisps {
+				path {
+					fill: rgba(0,0,0,0.2);
+				}
+			}
+		}
+	}
+
+	.leftMenu, .loginNav, .offCanvasNav, .gear1, .gear2, .gear3, .gear4, .gear5 {
+		display: none;
+	}
+	
+	.lowerContent, .intheWorks {
+		max-width: 100%;
+	}
+	
+	.globalcontainer .headerImg {
+		min-height: 1px;
+	}
+	
+	.projectsList li, .projectsList .intheWorks li {
+		border: none;
+		border-top: 1px solid #ccc;
+		box-shadow: none;
+	}
+	
+	.lowerContent, .intheWorks {
+	
+		h1.sectionTitle, h2.sectionTitle {
+			font-size: 11px;
+			color: rgba(0,0,0,0.9) !important;
+			text-align: left;
+			border-bottom: 1px solid rgba(0,0,0,0.6) !important;
+		}
+	
+	}
+	
+	
+	.detailedPrint {
+		.intheWorks, .loswerContent {
+			li {
+				.details {
+					border-top: 1px solid #e6e6e6;
+					  max-height: 700px;
+					  overflow: visible;
+					  padding-top: 14px;
+					  margin-top: 14px;
+				}
+			}
+		}
+	}
+	
+}

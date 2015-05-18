@@ -1,0 +1,26 @@
+<template name="dialogboxes">
+
+	<div class="confirmationContainer">
+		<h3>Are you sure you want to remove this project?</h3>
+		<strong>This cannot be undone.</strong>
+		<a href="#" class="primary removeConfirmation">Yes</a>
+		<a href="#" class="cancelConfirmation">No</a>
+	</div>
+	
+	<div class="completeContainer">
+		<h3>Are you sure you want to this project as Completed?</h3>
+		
+		<a href="#" class="primary completeConfirmation">Yes</a>
+		<a href="#" class="cancelConfirmation">No</a>
+	</div>
+
+	<div class="addProjectContainer">
+		{{> addprojectform }}
+	</div>
+	
+	<div class="editProjectContainer">
+		{{> editprojectform }}
+	</div>
+	
+
+</template>

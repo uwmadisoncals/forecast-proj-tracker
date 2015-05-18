@@ -1,0 +1,11 @@
+<template name="addticketform">
+	{{#if isAdminUser}}
+	<div class="centered addTicketForm">
+		<form id="ticketaddform" name="ticketaddform">
+	  		<input type="text" name="ticketname" id="ticketname" value="" placeholder="Ticket Item">
+	  		
+	  		<input style="display: none;" type="submit" id="ticketadd" value="Submit">
+		</form>
+	</div>
+	{{/if}}
+</template>

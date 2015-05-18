@@ -1,0 +1,254 @@
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+		
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes rotate {
+	0% {
+		-webkit-transform: rotate(0deg);
+		
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes rotate {
+	0% {
+		-moz-transform: rotate(0deg);
+		
+	}
+
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+
+.blur {
+	filter: blur(8px);
+	-webkit-filter:blur(8px);
+}
+
+.centered {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index:10;
+	background: rgba(0,0,0,0.3);
+}
+
+.subdescription {
+	display: none;
+}
+
+
+
+
+
+
+
+.globalcontainer {
+	position:relative;
+
+	padding: 0px;
+	
+
+	z-index:2;
+	background: #fff;
+	-webkit-transition: -webkit-transform 300ms cubic-bezier(0.260, 0.195, 0.240, 1); /* older webkit */
+-webkit-transition: -webkit-transform 300ms cubic-bezier(0.260, 0.195, 0.240, 1.205); 
+   -moz-transition: transform 300ms cubic-bezier(0.260, 0.195, 0.240, 1.205); 
+     -o-transition: transform 300ms cubic-bezier(0.260, 0.195, 0.240, 1.205); 
+        transition: transform 300ms cubic-bezier(0.260, 0.195, 0.240, 1.205); /* custom */
+
+
+        .headerImg.headerimgempty {
+        	min-height: 150px;
+        }
+
+        .headerImg {
+        	position:relative;
+        	min-height: 300px;
+        	background: $blue-opt2;
+        	overflow: hidden;
+
+        	li:hover {
+        		.menuBox {
+					transform: translate(0px,-50%);
+					-webkit-transform: translate(0px,-50%);
+					opacity: 1;
+				}
+				
+				.tasksCount {
+					transform: translate(-100px,-50%);
+					-webkit-transform: translate(-100px,-50%);
+				}
+        	}
+
+        	.gear1 {
+        		position: absolute;
+        		bottom: -100px;
+        		left: -100px;
+        		width: 400px;
+        		height: 400px;
+        		z-index:1;
+
+        		animation: rotate 37s linear;
+				-webkit-animation: rotate 37s linear;
+
+				animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+
+        		svg {
+        			width: 100%;
+        			height: 100%;
+
+        			path {
+        				fill: rgba(0,0,0,0.04);
+        			}
+        		}
+        	}
+
+        	.gear2 {
+        		position: absolute;
+        		bottom: -100px;
+        		right: -100px;
+        		width: 330px;
+        		height: 330px;
+        		z-index:1;
+
+        		animation: rotate 40s linear;
+				-webkit-animation: rotate 40s linear;
+
+				animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+
+        		svg {
+        			width: 100%;
+        			height: 100%;
+
+        			path {
+        				fill: rgba(0,0,0,0.1);
+        			}
+        		}
+        	}
+
+        	.gear3 {
+        		position: absolute;
+        		bottom: -100px;
+        		left: 268px;
+        		width: 200px;
+        		height: 200px;
+        		z-index:1;
+
+        		animation: rotate 22.92s linear;
+				-webkit-animation: rotate 22.92s linear;
+
+				animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+
+				animation-direction: reverse;
+				-webkit-animation-direction: reverse;
+
+        		svg {
+        			width: 100%;
+        			height: 100%;
+
+        			path {
+        				fill: rgba(0,0,0,0.12);
+        			}
+        		}
+        	}
+
+        	.gear4 {
+        		position: absolute;
+        		bottom: -30px;
+        		right: 364px;
+        		width: 60px;
+        		height: 60px;
+        		z-index:1;
+
+        		animation: rotate 13s linear;
+				-webkit-animation: rotate 13s linear;
+
+				animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+
+				
+
+        		svg {
+        			width: 100%;
+        			height: 100%;
+
+        			path {
+        				fill: rgba(0,0,0,0.2);
+        			}
+        		}
+        	}
+
+        	.gear5 {
+        		position: absolute;
+        		bottom: -30px;
+        		right: 270px;
+        		width: 100px;
+        		height: 100px;
+        		z-index:1;
+
+        		animation: rotate 18s linear;
+				-webkit-animation: rotate 18s linear;
+
+				animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+
+				animation-direction: reverse;
+				-webkit-animation-direction: reverse;
+
+        		svg {
+        			width: 100%;
+        			height: 100%;
+
+        			path {
+        				fill: rgba(0,0,0,0.1);
+        			}
+        		}
+        	}
+        }
+}
+
+
+
+
+
+
+.accessibilityHidden {
+	position: absolute;
+	top: -1000000px;
+	left: 0px;
+	z-index:1;
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 480px) {
+	.gear1, .gear2 {
+		display: none;
+	}
+}

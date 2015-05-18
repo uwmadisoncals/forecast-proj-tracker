@@ -1,0 +1,12 @@
+<template name="nav">
+	<div class="offCanvasNav">
+		
+		<ul>
+			<li><a href="{{pathFor 'home'}}">Home</a></li>
+			<li><a href="{{pathFor 'about'}}">About</a></li>
+			{{#if isAdminUser}}
+				<li><a href="{{pathFor 'adminTemplate'}}">Users</a></li>
+			{{/if}}
+		</ul>
+	</div>
+</template>

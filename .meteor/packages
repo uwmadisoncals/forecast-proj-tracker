@@ -1,0 +1,28 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+standard-app-packages
+jquery
+accounts-password
+iron:router
+iamkevingreen:meteor-pickadate
+accounts-ui
+accounts-base
+dessix:accounts-admin-ui-bootstrap-3
+alanning:roles
+jparker:gravatar
+particle4dev:sass
+meteorhacks:kadira
+rajit:bootstrap3-datepicker
+abpetkov:switchery
+service-configuration
+http
+email
+meteorhacks:ssr
+coffeescript
+msavin:mongol
+velocityjs:velocityjs

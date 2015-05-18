@@ -1,0 +1,39 @@
+<template name="loginnav">
+
+	<div class="leftMenu">
+		<a href="#" class="menuToggle"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 28.7 26.3" enable-background="new 0 0 28.7 26.3" xml:space="preserve">
+<g>
+	<rect x="4.9" y="5" fill="#FFFFFF" width="19" height="2"/>
+	<rect x="4.9" y="8.7" fill="#FFFFFF" width="15.3" height="2"/>
+	<rect x="4.9" y="12.4" fill="#FFFFFF" width="17.2" height="2"/>
+	<rect x="4.9" y="16.2" fill="#FFFFFF" width="12.8" height="2"/>
+</g>
+</svg><span class="accessibilityHidden">Menu</span></a>
+{{#if isAdminUser}}
+	<div class="addMenu">
+		<a href="#" class="addToggle cf"><div class="svg"><svg enable-background="new 0 0 24 24" height="24px" id="Layer_1" version="1.1" viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path clip-rule="evenodd" d="M22.5,14H14v8.5c0,0.276-0.224,0.5-0.5,0.5h-4C9.224,23,9,22.776,9,22.5V14H0.5  C0.224,14,0,13.776,0,13.5v-4C0,9.224,0.224,9,0.5,9H9V0.5C9,0.224,9.224,0,9.5,0h4C13.776,0,14,0.224,14,0.5V9h8.5  C22.776,9,23,9.224,23,9.5v4C23,13.776,22.776,14,22.5,14z" fill-rule="evenodd"/></svg></div></a>
+
+		<ul class="subMenu">
+
+			<li>
+				<a href="#" class="addProjectToggle cf"><div class="icon"><svg enable-background="new 0 0 24 24" height="24px" id="Layer_1" version="1.1" viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path clip-rule="evenodd" d="M22.5,14H14v8.5c0,0.276-0.224,0.5-0.5,0.5h-4C9.224,23,9,22.776,9,22.5V14H0.5  C0.224,14,0,13.776,0,13.5v-4C0,9.224,0.224,9,0.5,9H9V0.5C9,0.224,9.224,0,9.5,0h4C13.776,0,14,0.224,14,0.5V9h8.5  C22.776,9,23,9.224,23,9.5v4C23,13.776,22.776,14,22.5,14z" fill-rule="evenodd"/></svg></div> <span>Add Project</span></a>
+			</li>
+
+			
+
+		</ul>
+
+	</div>
+	{{/if}}
+	</div>
+
+	<div class="loginNav">
+		{{#if userGravatar}}
+			<img src="{{userGravatar}}">
+		{{/if}}
+
+		{{> loginButtons align="right"}}
+	</div>
+
+</template>

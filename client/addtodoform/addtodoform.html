@@ -1,0 +1,11 @@
+<template name="addtodoform">
+	{{#if isAdminUser}}
+	<div class="centered addTodoForm">
+		<form id="todoaddform" name="todoaddform">
+	  		<input type="text" name="todoname" id="todoname" value="" placeholder="Todo Item">
+	  		
+	  		<input style="display: none;" type="submit" id="todoadd" value="Submit">
+		</form>
+	</div>
+	{{/if}}
+</template>

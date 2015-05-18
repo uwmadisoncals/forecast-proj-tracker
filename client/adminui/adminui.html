@@ -1,0 +1,15 @@
+<template name="adminTemplate">
+
+	{{> headerimgempty}}
+
+	{{> loginnav}}
+
+	<div class="lowerContent">
+		{{#if isAdminUser}}
+        	{{> accountsAdmin}}
+	    {{else}}
+	        Must be admin to see this...
+	    {{/if}}
+	</div>
+   
+</template>
